@@ -96,10 +96,23 @@
     margin-right: 2vmin;
 
 }
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
 #victa {
-    background: linear-gradient(120deg, #FFDB01 40.39%, #FCBA00 45.66%, #171784 50.54%);
+    background: linear-gradient(142deg, #FFF501 58.96%, rgba(5, 0, 255, 0.46) 62.4%, #FCBA00 66.08%);
     -webkit-background-clip: text;
     color: transparent;
+    background-size: 200% 100%;
+    animation: shine 20s linear infinite  ;
+     
 }
 #hero-buttons{
     display: flex;
