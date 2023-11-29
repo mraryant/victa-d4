@@ -1,0 +1,220 @@
+#hero-main {
+    /* padding: 0px 7vmin 0px 7vmin; */
+    min-height: 50vmax;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #030027;
+    /* background-color: black; */
+    z-index: 1;
+    position: relative;
+    /* border-top: 5px solid var(--orange);
+    border-bottom: 5px solid var(--orange); */
+}
+#hero-gredient{
+ 
+    z-index: 1;
+    height: 30vmax;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: flex-end;
+        flex-shrink: 0;
+        background: linear-gradient(180deg, rgba(3, 0, 39, 0.00) 0%, #030027 100%);
+}
+
+#v1 {
+    position: absolute;
+    z-index: 0;
+     height: 100%;
+      width: 100%;  
+      opacity: 100%;
+      object-fit: cover;
+}
+
+#hero-left {
+    color: white;
+    /* color: white; */
+    z-index: 2;
+    width: 90%;
+   
+    min-height: 80vh;
+    display: flex;
+    align-items: left;
+    gap: 5vmax;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 3vmax;
+    /* margin-bottom: 2vmax; */
+    line-height: normal;
+    align-items: left;
+}
+
+#hero-left>h1 {
+    width: 70%;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 90px;
+    text-align: left;
+    font-weight: 500;
+}
+
+#hero-left>h6 {
+     
+    /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-size: 15px;
+    width: 50% ;
+    color:rgb(177, 177, 177);
+    margin-top: -20px;
+    /* padding: 5px 10px; */
+    text-align: left;
+    /* width: fit-content; */
+    border-radius: 10px;
+    font-weight: 500;
+     /* -webkit-text-stroke: 0.5px skyblue;   */
+    
+    /* background-color: rgba(32, 57, 68, 0.598) */
+}
+#hero-left>button {
+    width: fit-content;
+   align-self: center;
+}
+
+#hero-rocket {
+    /* background-color: black; */
+    height: 4vmax;
+    width: 10vmax;
+    display: inline-block;
+    position: relative;
+    /* display: inline; */
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+
+}
+#victa {
+    background: linear-gradient(120deg, #FFDB01 40.39%, #FCBA00 45.66%, #171784 50.54%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+#hero-buttons{
+    display: flex;
+    gap: 3vmax;
+}
+#hero-rocket>img {
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10vmax;
+    width: 10vmax;
+    margin-left: 10px;
+    z-index: 2;
+    /* margin-bottom: 100px; */
+
+}
+    
+
+#hero-right {
+    height: 60vmin;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    /* transition: all ease-in-out 0.4s; */
+    /* margin-bottom: 40px; */
+}
+
+#right_img {
+    object-fit: contain;
+    
+    position: absolute;
+}
+
+#astronot {
+    width: 20%;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    z-index: 10;
+}
+
+#blob {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* height: 70%; */
+    width: 70vmin;
+
+}
+
+#right_img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* height: 120%; */
+    width: 50vmin;
+    z-index: 2;
+    /* scale: 1.3; */
+}
+
+@media (max-width:362px) {
+    #hero-left>h1 {
+            text-align: left;
+            font-size: 40px;
+        }
+}
+@media (max-width:768px) {
+    #logo {
+            height: 4vmax;
+            width: 150vmax;
+        }
+    #hero-main {
+        
+        width: 100vw;
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        /* padding: 0px 10px 0px 7vmin; */
+        /* border-top: 5px solid var(--orange); */
+        /* border-bottom: 5px solid black; */
+    }
+
+    #hero-left>h1 {
+        text-align: left;
+        width: 100%;
+        font-size: 15vmin;
+    }
+
+    #hero-left>h6 {
+        width: 100%;
+        text-align: left;
+    }
+
+    #hero-left {
+        /* justify-content: center; */
+        align-items: left;
+        gap: 70px;
+        width: 90%;
+    }
+ 
+        #right_img {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            /* height: 120%; */
+            width: 60vmin;
+            /* scale: 1.3; */
+        }
+}
