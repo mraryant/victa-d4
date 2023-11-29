@@ -111,7 +111,7 @@
     -webkit-background-clip: text;
     color: transparent;
     background-size: 200% 100%;
-    animation: shine 20s linear infinite  ;
+    animation: shine 10s linear infinite  ;
      
 }
 #hero-buttons{
