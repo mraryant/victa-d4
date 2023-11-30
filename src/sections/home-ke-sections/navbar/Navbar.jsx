@@ -1,6 +1,6 @@
 
 import "./Navbar.css"
-import Logo from "../../../assets/logo/logo color name.svg"
+import Logo from "../../../assets/logo/yello-white-logo.png"
 // import Logo from "../../../assets/logo/logo color2 name.svg"
 import { motion } from "framer-motion"
 
@@ -38,14 +38,15 @@ const Navbar = () => {
                 className=" navbar navbar-expand-lg navbar-dark topnav">
                 <div className="container-fluid navfluid" >
                     <img id="logo"
-                        src={Logo}    />
+                        src={Logo}
+                    />
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div style={{ width: "21%" }}>
+                        <div style={{ width: "30%" }}>
 
                         </div>
                         <ul
@@ -72,7 +73,7 @@ const Navbar = () => {
                         </ul>
                         <form className="d-flex ngflex">
 
-                            {/* <button className="button-87 btn  " type="submit" style={{ width: "100%", fontSize: 14 }}>Buy Tokens</button> */}
+                            
                             <button className="button-87 btn2  " style={{ width: "100%", fontSize: 14 }}> <a style={{ textDecoration: 'none', color: 'white' }} target="block" href="https://presale.victacapitals.com/">Buy Tokens </a> </button>
                         </form>
                     </div>

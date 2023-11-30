@@ -1,5 +1,6 @@
 .fmain {
     width: 100%;
+    
     height: 100%;
 }
 
@@ -11,7 +12,8 @@
 }
 
 .footer-02 {
-    background: #131719;
+    background: #06063a;
+    border-radius: 50px 50px 0px 0px ;
 }
 
 .footer-02 .footer-heading .logo {

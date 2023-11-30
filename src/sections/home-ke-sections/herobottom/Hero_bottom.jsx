@@ -1,66 +1,80 @@
-// import Hero_bottom_cards from "../../../components/Hero_bottom_cards"
+ 
 import "./Hero_bottom.css"
-// import card1img from "../../../assets/images/hero bottom card 1.jpg"
-// import card2img from "../../../assets/images/hero bottom card 2.jpg"
-// import card3img from "../../../assets/images/hero bottom card 3.jpg"
-import b_img from "../../../assets/images/hero-bottom-image.svg"
-
-// import hb_i1 from "../../../assets/logo/hb i1.svg"
-// import hb_i2 from "../../../assets/logo/hb i2.svg"
-// import hb_i3 from "../../../assets/logo/hb i3.svg"
-// import hb_i4 from "../../../assets/logo/hb i4.svg"
+import {motion} from "framer-motion"
+ 
 
 const Hero_section = () => {
   return (
     <div id="hero-bottom-main">
-      <div id="hero-head">
-        <h1>Project Overview:</h1>
+      {/* <div id="hero-head">
+        <h1>Expertise you can trust </h1>
         <p>VICTA represents a groundbreaking initiative designed to address the challenges and limitations of traditional systems</p>
-      </div>
-      
-      {/* <div id="hero-bottom-left">
-
-        <Hero_bottom_cards
-          image={hb_i1}
-          h4={'Token Detail'}
-          pera={"VICTA, the native token of the VICTA ecosystem, is a meticulously crafted BEP20 token on the Binance Smart Chain with 450 million total supply and 18 decimal places, serving as the primary medium of exchange for the project's ambitious goals."}
-        />
-
-        <div id="mid-card"  >
-
-          <Hero_bottom_cards
-
-            image={hb_i2}
-            h4={'The Market Need'}
-            pera={'VICTA offers a unified and secure decentralized solution, spanning utility payments, e-commerce, electric vehicle applications, short video hosting, OTT platforms, and the metaverse, addressing the growing need for decentralization across diverse sectors.'}
-          />
-        </div>
-        <Hero_bottom_cards
-          image={hb_i3}
-          h4={'Technical Overview'}
-          pera={"VICTA's robust technical foundation, utilizing the BEP20 standard on the Binance Smart Chain, facilitates fast and cost-effective transactions. The innovative consensus mechanism enhances security, ensuring the integrity of the entire ecosystem."}
-        />
-
       </div> */}
+      
+       
 
       <div id="hero-bottom-lower">
-        
-      <div id="hero-bottom-left">
-        <img src={b_img} alt="" />
-      </div>
+  
       <div id="hero-bottom-right">
-        <div id="h-b-r-card">
-          <h2>Technical Overview </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem, reiciendis tenetur cum similique porro aut culpa harum dolorum animi.</p>
-         </div>
-        <div id="h-b-r-card">
-          <h2>Technical Overview </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem, reiciendis tenetur cum similique porro aut culpa harum dolorum animi.</p>
-         </div>
-        <div id="h-b-r-card">
-          <h2>Technical Overview </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolorem, reiciendis tenetur cum similique porro aut culpa harum dolorum animi.</p>
-         </div>
+          <motion.div
+            className='usecase1'
+            initial={{
+              opacity: 0,
+              x: 200
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              duration: 20,
+            }}
+            id="h-b-r-card">
+            <h2>Mission </h2>
+            <p>At the core of VICTA is a mission to democratize access to blockchain, making it intuitive, user-friendly, and relevant to everyday life. We aim to provide a comprehensive ecosystem that goes beyond the traditional boundaries of decentralized platforms</p>
+          </motion.div>
+          
+
+          <motion.div
+            className='usecase1'
+            initial={{
+              opacity: 0,
+              x: 200
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              duration: 20,
+            }}
+            id="h-b-r-card">
+            <h2>Security and Compliance </h2>
+            <p>Security is non-negotiable, We operate steadfastly committed to the highest security and legal compliance standards Smart contract audits, encryption protocols, and adherence to regulatory frameworks underscore our dedication to providing a safe environment for our users</p>
+         </motion.div>
+          <motion.div
+            className='usecase1'
+            initial={{
+              opacity: 0,
+              x: 200
+            }}
+            transition={{
+              ease: "easeInOut",
+              duration: 1,
+            }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              duration: 20,
+            }}
+            id="h-b-r-card">
+            <h2>Community-Centric Approach </h2>
+            <p>VICTA thrives on community engagement. We believe in the collective power of a vibrant and engaged community, Your feedback, ideas, and enthusiasm drive the evolution of VICTA, making it a shared endeavor</p>
+         </motion.div>
       </div>
         </div>
 

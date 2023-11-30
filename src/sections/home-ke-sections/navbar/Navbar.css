@@ -3,8 +3,10 @@
     /* background-color: rgba(169, 166, 166, 0.11);
     border-radius: 0px 0px 20px 20px; */
     width: 100%;
-    height: 100%;
-    z-index: 1;
+    /* height: 100%; */
+    background-color: black;
+    border-radius: 0px 0px 30px 30px ;
+    z-index: 99;
 }
 
 .navfluid {
@@ -16,6 +18,7 @@
     flex-direction: row;
     gap: 20px;
     color: white;
+    /* margin-right: 0px !important; */
     justify-content: center;
     align-items: center;
 
@@ -55,13 +58,10 @@
 
 #logo{
     /* height: 4vmax; */
-    width: 10vmax;
+    width: 50px;
+    height: 50px;
 }
-@media (max-width:768px) {
-    #logo {
-            /* height: 4vmax; */
-            width: 15vmax !important;
-        }}
+
 
 /* .topnav {
     color: black;

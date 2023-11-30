@@ -2,7 +2,10 @@
     display: flex;
     /* padding: 20px 7vmin 20px 7vmin; */
     /* color: white; */
-    background-color: #030027;
+    /* background-color: #030027; */
+    /* width: 70vw; */
+    /* flex-direction: column; */
+    /* background: linear-gradient(43deg,#000428 0,#000428 31.03%,#133c6d 100%); */
     justify-content: space-evenly;
     align-items: center;
    
@@ -25,23 +28,31 @@
 #util-left{
     width:13vmax;
 }
+#toko-main-container{
+     background: linear-gradient(43deg, #030d63 0, #000428 31.03%, #133c6d 100%);
+     border-radius: 30px 100px 30px 100px ;
+}
 #toko-head{
     display: flex;
+    
     flex-direction: column;
     gap: -10px;
     align-items: center;
 }
 #toko-h{
-    color: white;
+    color: rgb(247, 185, 27);
+    font-weight: 700;
+    /* font-size: 30px; */
     margin-top: 50px !important;
     margin: 20px;
-   background-color: #030027;
+   /* background-color: #030027; */
     text-align: center;
 }
 #toko-p{
     text-align: center;
-    color: white;
-    width: 70vw;
+    color: rgb(168, 164, 164);
+    line-height: normal;
+    width: 60%;
 }
 #toko-left {
     height: 35vmax;

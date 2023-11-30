@@ -25,10 +25,13 @@
     gap: 0px;
     justify-content: center;
 }
+#r-mid>h4{
+ font-weight: 600;
+}
  
 #image_div>img{
     width: 100%;
-    height: 100%;
+    height: 100%;   
 }
 #image_div{
     height: 10vmax;
@@ -41,6 +44,9 @@
 }
 #r-mid>p{
     color: rgb(197, 198, 198) !important;
+    line-height: normal;
+    font-size: 17px;
+    color: rgb(159, 155, 155) !important;
 }
 
 @media (max-width:936px) {

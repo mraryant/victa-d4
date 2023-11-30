@@ -1,9 +1,10 @@
 #hero-main {
     /* padding: 0px 7vmin 0px 7vmin; */
+    
     min-height: 50vmax;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     text-align: center;
     background-color: #030027;
@@ -12,6 +13,14 @@
     position: relative;
     /* border-top: 5px solid var(--orange);
     border-bottom: 5px solid var(--orange); */
+}
+#navbar-hero{
+    z-index: 10;
+    width: 100vw;
+    height: 65px;
+    position: fixed;
+    /* background-color: #000000; */
+    border-radius: 0px 0px 30px 30px ;
 }
 #hero-gredient{
  
@@ -40,9 +49,10 @@
 #hero-left {
     color: white;
     /* color: white; */
+    padding: 0px 7vmin 0px 7vmin;
     z-index: 2;
     width: 90%;
-   
+   padding-top: 100px ;
     min-height: 80vh;
     display: flex;
     align-items: left;
@@ -52,23 +62,55 @@
     /* justify-content: center; */
     margin-top: 3vmax;
     /* margin-bottom: 2vmax; */
-    line-height: normal;
+    /* line-height: normal; */
     align-items: left;
 }
 
 #hero-left>h1 {
-    width: 70%;
+    width: 120%;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-size: 90px;
     text-align: left;
-    font-weight: 500;
+    line-height: 60px;
+    font-weight: 600;
+}
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+#victa {
+    background: linear-gradient(142deg, #FFF501 58.96%, rgba(5, 0, 255, 0.46) 62.4%, #FCBA00 66.08%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: shine 10s linear infinite;
+
+}
+
+.sm-t {
+    font-size: 50px;
+}
+
+.lg-t {
+    font-size: 70px;
+}
+
+#hero-buttons {
+    display: flex;
+    gap: 3vmax;
 }
 
 #hero-left>h6 {
      
     /* font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-size: 15px;
-    width: 50% ;
+    font-size: 18px;
+    width: 90% ;
     color:rgb(177, 177, 177);
     margin-top: -20px;
     /* padding: 5px 10px; */
@@ -96,28 +138,7 @@
     margin-right: 2vmin;
 
 }
-@keyframes shine {
-    0% {
-        background-position: 200% 0;
-    }
 
-    100% {
-        background-position: -200% 0;
-    }
-}
-
-#victa {
-    background: linear-gradient(142deg, #FFF501 58.96%, rgba(5, 0, 255, 0.46) 62.4%, #FCBA00 66.08%);
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: 200% 100%;
-    animation: shine 10s linear infinite  ;
-     
-}
-#hero-buttons{
-    display: flex;
-    gap: 3vmax;
-}
 #hero-rocket>img {
     object-fit: contain;
     position: absolute;
@@ -135,7 +156,7 @@
     
 
 #hero-right {
-    height: 60vmin;
+    height: 100vmin;
     width: 100%;
     position: relative;
     display: flex;
@@ -147,8 +168,8 @@
 }
 
 #right_img {
-    object-fit: contain;
-    
+    /* object-fit: contain; */
+     width: 100% !important;
     position: absolute;
 }
 
@@ -184,10 +205,10 @@
 @media (max-width:362px) {
     #hero-left>h1 {
             text-align: left;
-            font-size: 40px;
+            /* font-size: 40px; */
         }
 }
-@media (max-width:768px) {
+@media (max-width:840px) {
     #logo {
             height: 4vmax;
             width: 150vmax;
@@ -203,15 +224,32 @@
         /* border-bottom: 5px solid black; */
     }
 
+    #hero-left>h1>div{
+        line-height: 50px;
+    }
     #hero-left>h1 {
         text-align: left;
         width: 100%;
-        font-size: 15vmin;
+        line-height: 60px;
+        /* font-size: 15vmin; */
+    }
+    .sm-t{
+        text-align: left;
+        width: 100%;
+        /* line-height: 30px; */
+        font-size: 40px;
+    }
+    .lg-t{
+        text-align: left;
+        width: 100%;
+        /* line-height: 30px; */
+        font-size: 70px;
     }
 
     #hero-left>h6 {
         width: 100%;
         text-align: left;
+        
     }
 
     #hero-left {

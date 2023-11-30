@@ -1,13 +1,15 @@
  #roadmap-main {
      display: flex;
      flex-direction: column;
-     padding: 10vmax 0px 1vmax 0px;
+     padding: 7vmax 0px 1vmax 0px;
      gap: 3vmax;
      justify-content: center;
      align-self: center;
      width: 100vw;
      min-height: 60vh;
-     background-color: #030027;
+     border-radius: 80px;
+     /* background-color: #030027; */
+     background: linear-gradient(43deg,#030837 0,#000428 31.03%,#133c6d 100%);
  }
 
  #roadmap-head {
@@ -16,15 +18,19 @@
      gap: 10px;
  }
 
- #roadmap-main>#roadmap-head>h1 {
-     font-weight: 500;
+ #roadmap-head>h1 {
+    color: rgb(247, 185, 27) !important;
+     font-weight: 700;
  }
 
  #roadmap-main>#roadmap-head>p {
-     color: rgb(202, 198, 198);
-     width: 95vmin;
-
+     color: rgb(187, 183, 183);
+     width: 45%;
+     text-wrap: wrap;
+     font-size: 18px;
+     font-weight: 500;
      text-align: center;
+     line-height: normal;
      align-self: center;
  }
  
@@ -43,7 +49,7 @@
 
  #ro-top>img{
     position: absolute;
-    top: 140px;
+    top: 120px;
     width: 100%;
  }
  #ro-top{
@@ -52,7 +58,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-     gap: 50px;
+     gap: 80px;
       
  }
  .ro-bottomtop{
@@ -70,7 +76,7 @@
 
  #ro-bottom>img{
     position: absolute;
-    top: 150px;
+    top: 100px;
         width: 100%;
  }
  #ro-bottom{
@@ -100,6 +106,9 @@
 
 @media (max-width:936px){
 
+    #roadmap-main>#roadmap-head>p {
+        width: 70%;
+    }
  #roadmap-main {
     gap: 0vmax;
  }
@@ -133,11 +142,11 @@
     }
 
     #roadmap-path {
-        margin-top: 50px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
         gap: 30px;
         /* position: absolute; */
-        left: 30vmax;
+        /* left: 30vmax; */
     }
 }
