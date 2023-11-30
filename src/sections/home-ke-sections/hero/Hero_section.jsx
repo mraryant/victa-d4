@@ -8,16 +8,7 @@ import Headroom from "react-headroom"
 // import { motion } from "framer-motion"
 
 const Hero_section = () => {
-
-  
-
-
-
-
-
-
-
-
+ 
   return (
     <>
           <div id="navbar-hero">
@@ -37,7 +28,9 @@ const Hero_section = () => {
               <span id="victa"> Victa </span>
               <span className="sm-t"> Is  First </span>
               <span className="lg-t"> POE  </span>
-              <span className="sm-t"> (Proof Of Energy) </span>
+              <div>
+              <span id="poe" className="sm-t"> (Proof Of Energy) </span>
+              </div>
               <span className="lg-t"> Protocol  </span>
             </div>
           </h1>

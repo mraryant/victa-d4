@@ -264,11 +264,7 @@ const usecase = () => {
                 </div>
 
               </motion.div>
-            
-
-
-
-
+ 
           </div>
         </div>
       </motion.div>
